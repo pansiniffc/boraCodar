@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Encontre seu bloco de carnaval</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +19,26 @@
         <p>find your block</p>
         <h1>Encontre os melhores <span>blocos de carnaval</span> de 2023</h1>
       </div>
-      
+
+      <form class="search" action="./">
+        <div class="search-field">
+          <label for="name">Pesquise por nome</label>
+          <input type="text" name="name" id="name">
+        </div>
+
+        <div class="search-field">
+          <label for="city">Selecione uma cidade</label>
+          <select name="city" id="city">
+            <option value="0" selected>Selecione sua cidade</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+            <option value="salvador">Salvador</option>
+          </select>
+        </div>
+
+        <button>Buscar agora</button>
+
+      </form>
     </div>
   </header>
 </body>
