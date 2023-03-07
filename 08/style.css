@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292738;
+  font-family: "inter", sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+li {
+  list-style: none;
+}
+
+.container {
+  color: white;
+}
+
+.info-geral {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  gap: 59px 32px;
+  padding: 112px 123px;
+  justify-content: center;
+}
+
+.dashboard {
+  background-color: #363447;
+  padding: 29px 48px;
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.dashboard h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.dashboard p {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.dashboard span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pontos {
+  display: grid;
+}
+
+.pontos-nota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.pontos-nota p {
+  color: #81fbb8;
+}
+
+.circulo {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  border: 20px solid tomato;
+  position: relative;
+}
+
+.circulo-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  bottom: 55px;
+}
+
+.circulo-txt p {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.circulo-txt span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.estatisticas span {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.estatisticas span::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin-right: 4px;
+}
+
+.estatisticas span:nth-child(1):before {
+  background-color: #4A4556;
+}
+
+.info-semanal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 3;
+}
+
+.info-semanal h1 {
+  grid-column: span 2;
+}
+
+.info-semanal p{
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.info-semanal span{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-semanal span::before{
+  
+}
+
+.info-dias-menosvenda{
+  margin-top: 20px;
+}
