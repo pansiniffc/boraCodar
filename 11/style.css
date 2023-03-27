@@ -17,18 +17,20 @@ body {
 }
 
 #page {
-  height: 100vh;
+  height: 50vh;
 }
 
-.flex{
-  display: flex;
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#page > *{
-  width: 50%;
+#page > * {
+  /* width: 50%; */
 }
 
 .tela2 {
+  height: 100vh;
   width: 100%;
   object-fit: cover;
 }
@@ -39,10 +41,117 @@ body {
 
 main {
   margin-top: 11.4rem;
+  max-width: 38.4rem;
 }
 
 form {
   margin-top: 4rem;
+}
+
+::placeholder {
+  color: #94a3b8;
+  font-size: 1.4rem;
+}
+
+.headline h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.5rem;
+  color: #1e293b;
+}
+
+.headline p {
+  margin-top: 1.6rem;
+  color: #475569;
+}
+
+.input label {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.input input {
+  width: 100%;
+  margin-top: 0.8rem;
+  display: block;
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+  border: 0.1rem solid #e2e8f0;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #7c3aed;
+}
+
+.label-wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-wrapper a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 0.4rem;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  padding: 1.6rem 1.2rem;
+  width: 100%;
+  margin: 3.2rem 0;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #9f67ff;
+}
+
+.help {
+  color: #475569;
+}
+
+.help a {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+#email.ativo {
+  border: 1px solid red;
+}
+
+.erro {
+  display: none;
+  font-size: 1.4rem;
+  color: #ed3a5a;
+}
+
+.erro.ativo {
+  display: block;
+}
+
+@media (max-width: 850px) {
+  img {
+    display: none;
+  }
+
+  .flex {
+    grid-template-columns: 1fr;
+  }
+  .headline {
+    display: none;
+  }
 }
 
 /* .login {

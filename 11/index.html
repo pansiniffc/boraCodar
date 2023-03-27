@@ -20,20 +20,21 @@
       </header>
       <main>
         <div class="headline">
-          <h1 class="titulo">Acesse a Plataforma</h1>
-          <p class="subtitulo">Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+          <h1>Acesse a Plataforma</h1>
+          <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
         </div>
         <form>
           <div class="input">
             <label for="email">E-mail</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+            <span class="erro">Digite um e-mail válido</span>
           </div>
           <div class="input">
             <div class="label-wrapper">
               <label for="senha">Senha</label>
               <a href="#">Esqueceu a senha?</a>
             </div>
-            <input type="text" name="senha" id="senha">
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
           </div>
           <button type="submit">Entrar</button>
         </form>
@@ -45,6 +46,8 @@
     </div>
     <img class="tela2" src="assets/Rectangle 1.svg" alt="">
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
