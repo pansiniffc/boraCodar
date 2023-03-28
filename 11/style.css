@@ -65,6 +65,20 @@ form {
   color: #475569;
 }
 
+.input {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 52%;
+  right: 5%;
+}
+
+.hide {
+  display: none;
+}
+
 .input label {
   color: #1e293b;
   font-weight: 600;
@@ -74,7 +88,7 @@ form {
 .input input {
   width: 100%;
   margin-top: 0.8rem;
-  display: block;
+  /* display: block; */
   border-radius: 0.4rem;
   padding: 1.6rem 1.2rem;
   border: 0.1rem solid #e2e8f0;
@@ -83,6 +97,7 @@ form {
 input:hover,
 input:focus {
   border: 1px solid #7c3aed;
+  outline: none;
 }
 
 .label-wrapper {
@@ -142,15 +157,26 @@ button:hover {
 }
 
 @media (max-width: 850px) {
-  img {
+  #page > img {
     display: none;
+  }
+
+  main {
+    max-width: 55rem;
   }
 
   .flex {
     grid-template-columns: 1fr;
   }
+
   .headline {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  #page > div {
+    padding: 5rem;
   }
 }
 
