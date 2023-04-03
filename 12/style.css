@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 17.5rem 1fr;
+  height: 100vh;
+}
+
+.menu {
+  background: #7c3aed;
+  padding: 3.5rem;
+}
+
+.menu-opt {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.menu-opt:nth-child(2) {
+  color: #fff !important;
+  font-weight: 700;
+  margin-top: 6rem;
+}
+
+.menu-opt {
+  color: #cab3ff;
+}
+
+.menu-opt {
+  margin-top: 3.5rem;
+}
+
+main {
+  padding: 4.8rem 3.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header-titulo img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.pesquisa {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+  align-items: center;
+}
+
+.btn {
+  background: #7c3aed;
+  color: #fff;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.btn span {
+  text-shadow: 0rem 0.4rem 0.16rem rgba(22, 22, 22, 0.1);
+  font-size: 1.4rem;
+}
+
+.filter {
+  font-size: 2.4rem;
+}
+
+.input-filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.8rem;
+  border: 0.7px solid #e3e3e3;
+  box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
+  padding: 1.2rem 2.4rem;
+  flex: 1;
+}
+
+.search {
+  font-size: 2.4rem;
+  color: #505059;
+}
+
+.input-text {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.input-filter:has(:focus) {
+  outline: 0.2rem black solid;
+}
+
+.input-text::placeholder {
+  font-size: 1.6rem;
+  color: #707c8a;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.painel-fazer h2 {
+  margin-top: 5.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.tarefa {
+  width: 32rem;
+  padding: 2.4rem;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px #eae2fd;
+  border-radius: 8px;
+
+  margin-top: 2.4rem;
+}
+
+.tarefa p:nth-child(1) {
+  color: #403937;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.tarefa p:nth-child(2) {
+  color: #756966;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tarefa span {
+  font-size: 1.1rem;
+  background-color: #e2d6ff;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  color: #7c3aed;
+}
