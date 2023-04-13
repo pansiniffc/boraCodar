@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+}
+
+.upload {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  padding: 3.2rem 10.5rem;
+  border-radius: 0.8rem;
+}
