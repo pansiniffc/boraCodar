@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.item {
+  display: grid;
+  width: 384px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 48px 32px 32px;
+}
+
+.item:hover {
+  border: 1px solid #996dff;
+}
+
+.btn:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+.btnPrincipal:hover {
+  background: #7c3aed;
+}
+.itemPrincipal {
+  background: #0f172a;
+}
+
+.itemPrincipal::before {
+  content: "MAIS VANTAJOSO";
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 13.3rem;
+  height: 3.4rem;
+  display: inline-flex;
+  place-content: center;
+  background: #fba94c;
+  border-radius: 6px;
+  position: relative;
+  bottom: 65px;
+  left: 90px;
+}
+
+.subtitulo {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #7c3aed;
+  margin-bottom: 0.8rem;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+  color: #fff;
+}
+
+.btn {
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.btnPrincipal {
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  background: #996dff;
+  cursor: pointer;
+}
+
+.preco {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.precoPrincipal {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.precoPrincipal span {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.preco span {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.linha {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  background: #ccc;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 1.6rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+
+.listaPrincipal li {
+  color: #cbd5e1;
+}
+
+ul li::before {
+  content: "";
+  background: url(assets/Check.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+ul li::after {
+  content: "";
+  background: url(assets/Info.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  left: 150px;
+}
