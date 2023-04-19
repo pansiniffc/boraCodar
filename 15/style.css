@@ -8,174 +8,246 @@
 
 :root {
   font-size: 62.5%;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-green-100: #04d361;
+  --color-green-200: #1b873f;
+  --color-purple-100: #996dff;
+  --color-purple-200: #7c3aed;
+  --color-white: #ffffff;
+  --color-orange: #fba94c;
 }
 
-body {
+body,
+html {
   font-size: 1.6rem;
   font-family: "Titillium Web", sans-serif;
 }
 
-.container {
-  display: grid;
-  place-content: center;
-  height: 100vh;
-}
-
-@media (max-width: 1000px) {
-  .content {
-    grid-template-columns: 1fr;
-  }
-}
-
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3.2rem;
+  gap: 24px;
 }
 
-.item {
-  display: grid;
-  width: 384px;
-  border: 1px solid #e2e8f0;
+section {
+  width: 320px;
+  margin: auto;
+}
+
+section .interno {
+  padding: 24px;
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-gray-200);
   border-radius: 10px;
-  padding: 48px 32px 32px;
 }
 
-.item:hover {
-  border: 1px solid #996dff;
-}
-
-.btn:hover {
-  background: #1e293b;
-  color: #fff;
-}
-
-.btnPrincipal:hover {
-  background: #7c3aed;
-}
-.itemPrincipal {
-  background: #0f172a;
-}
-
-.itemPrincipal::before {
-  content: "MAIS VANTAJOSO";
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  width: 13.3rem;
-  height: 3.4rem;
-  display: inline-flex;
-  place-content: center;
-  background: #fba94c;
-  border-radius: 6px;
-  position: relative;
-  bottom: 65px;
-  left: 90px;
-}
-
-.subtitulo {
+.interno p {
   font-weight: 600;
-  font-size: 1.4rem;
-  color: #7c3aed;
-  margin-bottom: 0.8rem;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+
+  color: var(--color-purple-200);
 }
 
 .titulo {
+  margin-top: 8px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 4.8rem;
+  justify-content: space-between;
 }
 
-.tituloPrincipal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4.8rem;
-  color: #fff;
-}
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
 
-.btn {
-  padding: 16px 0;
-  font-weight: 700;
-  font-size: 1.6rem;
-  border: 1px solid #1e293b;
-  border-radius: 4px;
-  background: #fff;
-  cursor: pointer;
-}
-.btnPrincipal {
-  padding: 16px 0;
-  font-weight: 700;
-  font-size: 1.6rem;
-  border: 1px solid #1e293b;
-  border-radius: 4px;
-  background: #996dff;
-  cursor: pointer;
+  color: var(--color-gray-800);
 }
 
 .preco {
-  font-size: 2.4rem;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: var(--color-gray-800);
+}
+
+.preco strong {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: 100%;
+
+  border: 1px solid var(--color-gray-800);
+  border-radius: 4px;
+
+  margin-top: 16px;
+
   font-weight: 700;
-  color: #1e293b;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-gray-800);
+
+  cursor: pointer;
 }
 
-.precoPrincipal {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.precoPrincipal span {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-.preco span {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-.linha {
-  content: "";
-  display: block;
-  width: 320px;
-  height: 1px;
-  background: #ccc;
-  margin-top: 32px;
-  margin-bottom: 32px;
+.primary:hover {
+  background-color: var(--color-gray-800);
+  color: var(--color-white);
 }
 
 ul {
+  border-top: 1px solid var(--color-gray-200);
+  padding-top: 16px;
+  margin-top: 16px;
+
   list-style: none;
+
+  display: grid;
+  gap: 16px;
 }
 
-ul li {
-  font-size: 1.6rem;
-  color: #475569;
+li {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
-.listaPrincipal li {
-  color: #cbd5e1;
+li span {
+  flex: 1;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+
+  color: var(--color-gray-600);
 }
 
-ul li::before {
-  content: "";
-  background: url(assets/Check.svg);
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 0.8rem;
+li i.ph-check {
+  font-size: 20px;
+  color: var(--color-green-200);
 }
 
-ul li::after {
-  content: "";
-  background: url(assets/Info.svg);
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+li i.ph-info {
+  font-size: 16px;
+  color: var(--color-gray-800);
+}
+
+.enterprise .title {
+  font-size: 32px;
+  line-height: 49px;
+}
+
+.enterprise button {
+  margin-top: 32px;
+}
+
+.enterprise ul {
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+section.best {
   position: relative;
-  left: 150px;
+  margin-top: 16px;
+}
+
+section.best::before {
+  content: "MAIS VANTAJOSO";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-gray-900);
+
+  display: inline-block;
+
+  background-color: var(--color-orange);
+  padding: 8px 16px;
+  border-radius: 6px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: -17px;
+}
+
+.ultimate .interno {
+  padding: 40px;
+  background-color: var(--color-gray-900);
+}
+
+.ultimate .title,
+.ultimate .preco {
+  color: var(--color-gray-50);
+}
+
+.interno p {
+  color: var(--color-purple-100);
+}
+
+button.secundario {
+  background-color: var(--color-purple-100);
+  color: white;
+}
+
+button.secundario:hover {
+  background-color: var(--color-purple-200);
+}
+
+.ultimate ul {
+  border-color: var(--color-gray-700);
+}
+
+.ultimate li span {
+  color: var(--color-gray-300);
+}
+
+.ultimate li .ph-info {
+  color: var(--color-gray-500);
+}
+
+/* transition animate */
+
+section .interno:hover {
+  border-color: var(--color-purple-100);
+}
+
+section .interno {
+  transition: border 300ms;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+section {
+  transition: transform 300ms;
+  animation: appear 400ms backwards var(--delay);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
